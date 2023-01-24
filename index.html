@@ -2,26 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favorite Easy Recipes</title>
 </head>
+<script>
+    var sites = [
+        'recipes/levain.html',
+        'recipes/butrchick.html',
+        'recipes/bbqpork.html',
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
 <body>
     <p>
-        <h4>The Odin Project:</h4>
+        <h4>The Odin Project: <a href="#" onclick="randomSite();"> Random Recipe </a></h4>
         <h1>My Favorite Easy Recipes</h1>
     </p>
     <p>
-        <h4><a href="/recipes/levain.html">Levain Chocolate-Chip Cookies</a></h4>
-        <a href="/recipes/levain.html"><img src="/images/levain.jpg" alt="Juicy Cookie mmmmmm" style="width:400px;height:400px;"></a>
+        <h4><a href="recipes/levain.html">Levain Chocolate-Chip Cookies</a></h4>
+        <a href="recipes/levain.html"><img src="images/levain.jpg" alt="Juicy Cookie mmmmmm" style="width:400px;height:400px;"></a>
     </p>
     <p>
-        <h4><a href="/recipes/butrchick.html">Butter Chicken</a></h4>
-        <a href="/recipes/butrchick.html"><img src="/images/butrchick.jpg" alt="Yummy Chicken yummmmmm" style="width:400px;height:400px;"></a>
+        <h4><a href="recipes/butrchick.html">Butter Chicken</a></h4>
+        <a href="recipes/butrchick.html"><img src="images/butrchick.jpg" alt="Yummy Chicken yummmmmm" style="width:400px;height:400px;"></a>
     </p>
     <p>
-        <h4><a href="/recipes/bbqpork.html">BBQ Pulled Pork</a></h4>
-        <a href="/recipes/bbqpork.html"><img src="/images/bbqpork.jpg" alt="Barbequeeeeeeeeeeewweeeeeeee" style="width:400px;height:400px;"></a>
+        <h4><a href="recipes/bbqpork.html">BBQ Pulled Pork</a></h4>
+        <a href="recipes/bbqpork.html"><img src="images/bbqpork.jpg" alt="Barbequeeeeeeeeeeewweeeeeeee" style="width:400px;height:400px;"></a>
     </p>
 
 </body>
